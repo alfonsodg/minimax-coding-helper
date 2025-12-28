@@ -1,0 +1,37 @@
+{
+  "name": "minimax-coding-helper",
+  "version": "0.1.0",
+  "description": "MiniMax M2.1 Coding Plan Helper for managing multi coding tools",
+  "main": "dist/index.js",
+  "bin": {
+    "minimax-helper": "dist/cli.js",
+    "mhelper": "dist/cli.js"
+  },
+  "type": "module",
+  "files": ["dist", "README.md", "LICENSE"],
+  "engines": { "node": ">=18.0.0" },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch src/cli.ts",
+    "start": "node dist/cli.js",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "pnpm run clean && pnpm run build"
+  },
+  "keywords": ["cli", "coding", "minimax", "m2.1", "ai"],
+  "author": "Alfonso de la Guarda",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0",
+    "inquirer": "^9.2.12",
+    "js-yaml": "^4.1.0",
+    "ora": "^8.0.1"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.7",
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^22.10.2",
+    "tsx": "^4.20.6",
+    "typescript": "^5.7.2"
+  }
+}
