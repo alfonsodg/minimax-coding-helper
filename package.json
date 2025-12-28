@@ -1,5 +1,8 @@
 {
-  "name": "minimax-coding-helper",
+  "name": "@alfonsodg/minimax-coding-helper",
+  "publishConfig": {
+    "access": "public"
+  },
   "version": "0.1.0",
   "description": "MiniMax M2.1 Coding Plan Helper for managing multi coding tools",
   "main": "dist/index.js",
