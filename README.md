@@ -37,18 +37,26 @@ A CLI tool to configure [MiniMax M2.1](https://platform.minimax.io/) model in AI
 ## Installation
 
 ```bash
-# npm
-npm install -g minimax-coding-helper
+# npm (recommended)
+npm install -g @alfonsodg/minimax-coding-helper
 
 # pnpm
-pnpm add -g minimax-coding-helper
+pnpm add -g @alfonsodg/minimax-coding-helper
+
+# yarn
+yarn global add @alfonsodg/minimax-coding-helper
 
 # From source
-git clone https://github.com/user/minimax-coding-helper
+git clone https://github.com/alfonsodg/minimax-coding-helper
 cd minimax-coding-helper
 pnpm install && pnpm build
 npm link
 ```
+
+## Links
+
+- **npm**: https://www.npmjs.com/package/@alfonsodg/minimax-coding-helper
+- **GitHub**: https://github.com/alfonsodg/minimax-coding-helper
 
 ## Usage
 
@@ -228,4 +236,4 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 
 ## License
 
-MIT
+Apache-2.0
