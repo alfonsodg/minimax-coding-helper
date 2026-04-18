@@ -1,7 +1,12 @@
 {
   "name": "@alfonsodg/minimax-coding-helper",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alfonsodg/minimax-coding-helper.git"
   },
   "version": "0.1.0",
   "description": "MiniMax M2.1 Coding Plan Helper for managing multi coding tools",
@@ -11,16 +16,28 @@
     "mhelper": "dist/cli.js"
   },
   "type": "module",
-  "files": ["dist", "README.md", "LICENSE"],
-  "engines": { "node": ">=18.0.0" },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && cp -r src/locales dist/",
     "dev": "tsx watch src/cli.ts",
     "start": "node dist/cli.js",
     "clean": "rm -rf dist",
     "prepublishOnly": "pnpm run clean && pnpm run build"
   },
-  "keywords": ["cli", "coding", "minimax", "m2.1", "ai"],
+  "keywords": [
+    "cli",
+    "coding",
+    "minimax",
+    "m2.1",
+    "ai"
+  ],
   "author": "Alfonso de la Guarda",
   "license": "Apache-2.0",
   "dependencies": {
@@ -28,7 +45,7 @@
     "commander": "^12.1.0",
     "inquirer": "^9.2.12",
     "js-yaml": "^4.1.0",
-    "ora": "^8.0.1"
+    "smol-toml": "^1.6.1"
   },
   "devDependencies": {
     "@types/inquirer": "^9.0.7",
